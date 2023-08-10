@@ -5,8 +5,8 @@ import axios from 'axios';
 const URL = 'https://finalsbe.onrender.com/books/'
 const BookCard = (props) => {
     const navigate = useNavigate();
-    const handleDelete = () =>{
-        axios.delete(URL+'delete/'+ props.book._id).then(r=>{navigate(0)})
+    const handleDelete = (id) =>{
+        axios.delete(URL+'delete/'+ id).then(r=>{navigate(0)})
     }
     return (
         <div>
@@ -15,7 +15,7 @@ const BookCard = (props) => {
             title: {props.book.title}
             author: {props.book.author}
             description: {props.book.description}
-            <div onClick={()=>{handleDelete()}}>X</div>
+            <div onClick={()=>{handleDelete(props.book._id)}}>X</div>
         </div>
     )
 }
