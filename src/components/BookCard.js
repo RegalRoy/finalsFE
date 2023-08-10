@@ -6,7 +6,7 @@ const URL = 'https://finalsbe.onrender.com/books/'
 const BookCard = (props) => {
     const navigate = useNavigate();
     const handleDelete = (id) =>{
-        axios.delete(URL+'delete/'+ id).then(r=>{navigate(0)})
+        axios.delete(URL+'delete/'+ id).then(r=>{navigate(0); console.log(id + " is deleted")})
     }
     return (
         <div>
