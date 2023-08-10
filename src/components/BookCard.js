@@ -2,7 +2,7 @@
 import { Routes, Route, Link,useNavigate } from 'react-router-dom'
 import axios from 'axios';
 
-const URL = 'http://localhost:3000/books/'
+const URL = 'https://finalsbe.onrender.com/books/'
 const BookCard = (props) => {
     const navigate = useNavigate();
     const handleDelete = () =>{
