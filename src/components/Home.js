@@ -4,7 +4,7 @@ import BookCard from './BookCard'
 import AddBook from './AddBook'
 import { Routes, Route, Link } from 'react-router-dom'
 
-const URL = 'http://localhost:3000/books/'
+const URL = 'https://finalsbe.onrender.com/books/'
 const Home = (e) => {
     const [books, setBooks] = useState([])
 

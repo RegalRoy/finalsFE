@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios';
 import { useParams,Link } from 'react-router-dom';
-const URL = 'http://localhost:3000/books/'
+const URL = 'https://finalsbe.onrender.com/books/'
 const GetABook = () =>{
     const[book, setBook] = useState({})
     const {id} = useParams();
